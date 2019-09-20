@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:minWidth="200dp"
                 android:onClick="onClickAdsBtn"
-                android:text="showCustomInappMsg"
+                android:text="showCustomInappMsg(Card)"
                 android:textAllCaps="false" />
 
             <Button
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:minWidth="200dp"
                 android:onClick="onClickAdsBtn"
-                android:text="showCustomInappMsgModal"
+                android:text="showCustomInappMsg(Modal)"
                 android:textAllCaps="false" />
             <Button
                 android:id="@+id/showCustomInappMsgImage"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:minWidth="200dp"
                 android:onClick="onClickAdsBtn"
-                android:text="showCustomInappMsgImage"
+                android:text="showCustomInappMsg(Image)"
                 android:textAllCaps="false" />
             <Button
                 android:id="@+id/showCustomInappMsgTopBanner"
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:minWidth="200dp"
                 android:onClick="onClickAdsBtn"
-                android:text="showCustomInappMsgTopBanner"
+                android:text="showCustomInappMsg(TopBanner)"
                 android:textAllCaps="false" />
 
         </LinearLayout>
