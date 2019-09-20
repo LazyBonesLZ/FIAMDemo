@@ -26,7 +26,7 @@ public class WelcomeAcitvity extends Activity /*implements AndroidUUIDListener *
             startActivity(intent);
 //        }
 
-//        finish();
+        finish();
     }
 
 
