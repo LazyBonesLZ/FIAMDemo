@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--<base-config cleartextTrafficPermitted="true">-->
+        <!--<trust-anchors>-->
+            <!--<certificates src="system" overridePins="true" />-->
+            <!--<certificates src="user" overridePins="true" />-->
+            <!--<certificates src="@raw/charles_ssl_new"/>-->
+        <!--</trust-anchors>-->
+    <!--</base-config>-->
+
+
+    <!--<domain-config>-->
+        <!--<domain includeSubdomains="true">*</domain>-->
+    <!--</domain-config>-->
+    <!--<debug-overrides>-->
+        <!--<trust-anchors>-->
+            <!--<certificates src="system" overridePins="true" />-->
+            <!--<certificates src="user" overridePins="true" />-->
+            <!--<certificates src="@raw/charles_ssl_new"/>-->
+        <!--</trust-anchors>-->
+    <!--</debug-overrides>-->
+
+
+    <base-config>
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user"/>
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<network-security-config>-->
+    <!--<base-config>-->
+        <!--<trust-anchors>-->
+            <!--<certificates src="system" />-->
+            <!--<certificates src="user" />-->
+        <!--</trust-anchors>-->
+    <!--</base-config>-->
+    <!--<domain-config cleartextTrafficPermitted="true">-->
+        <!--<domain includeSubdomains="true">*</domain>-->
+    <!--</domain-config>-->
+    <!--&lt;!&ndash;<domain-config >&ndash;&gt;-->
+        <!--&lt;!&ndash;<domain includeSubdomains="true">*</domain>&ndash;&gt;-->
+        <!--&lt;!&ndash;<trust-anchors>&ndash;&gt;-->
+            <!--&lt;!&ndash;<certificates src="system" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<certificates src="user" />&ndash;&gt;-->
+        <!--&lt;!&ndash;</trust-anchors>&ndash;&gt;-->
+    <!--&lt;!&ndash;</domain-config>&ndash;&gt;-->
+<!--</network-security-config>-->

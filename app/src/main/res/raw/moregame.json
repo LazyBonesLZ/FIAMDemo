@@ -1,0 +1,49 @@
+{
+  "default_app_icon": "https://services.beautygirlsinc.com/static/upload/Default_Icon_5_7.png",
+  "btn_img": "https://services.beautygirlsinc.com/static/upload/39A5CEF9-F28B-434F-8CD4-A6ACC7170D2B_18_11.png",
+  "default_app_icon_localpath": "",
+  "btn_img_localpath": "",
+  "apps": [
+    {
+      "name": "Unicorn Slime DIY Cooking Games",
+      "url": "https://services.beautygirlsinc.com/more/school_lunch_maker/en/?model=SM-T810&sysVer=7.0&bundleVer=1.5&bundleID=com.kidsfoodinc.school_lunch_maker&platform=32&v=2&top",
+      "url_scheme": " kfood-unicorn-unicorn-slime-girl-games-for-free",
+      "bundle_id": "com.kidsfoodinc.unicorn.unicorn.slime.girl.games.for.free",
+      "click_callback": "",
+      "id": 6467,
+      "icon_localpath": "MoreGames/icon0.jpg",
+      "icon": "https://services.beautygirlsinc.com/static/upload/FOOD0003G.jpg"
+    },
+    {
+      "name": "Unicorn Chef: Mermaid Cooking",
+      "url": "https://services.beautygirlsinc.com/more/school_lunch_maker/en/?model=SM-T810&sysVer=7.0&bundleVer=1.5&bundleID=com.kidsfoodinc.school_lunch_maker&platform=32&v=2&top",
+      "url_scheme": " kfood-games",
+      "bundle_id": "mermaid.food.games",
+      "click_callback": "",
+      "id": 6498,
+      "icon_localpath": "MoreGames/icon1.jpg",
+      "icon": "https://services.beautygirlsinc.com/static/upload/FOOD0002NG.jpg"
+    },
+    {
+      "name": "Unicorn Chef: Fun Free Cooking Games for Kids",
+      "url": "https://services.beautygirlsinc.com/more/school_lunch_maker/en/?model=SM-T810&sysVer=7.0&bundleVer=1.5&bundleID=com.kidsfoodinc.school_lunch_maker&platform=32&v=2&top",
+      "url_scheme": " kfood-unicorn-cooking-game",
+      "bundle_id": "com.kidsfoodinc.unicorn.cooking.game",
+      "click_callback": "",
+      "id": 6408,
+      "icon_localpath": "MoreGames/icon2.jpg",
+      "icon": "https://services.beautygirlsinc.com/static/upload/icon-192_64.jpg"
+    },
+    {
+      "name": "Jigsaw Low Poly",
+      "url": "https://services.beautygirlsinc.com/more/school_lunch_maker/en/?model=SM-T810&sysVer=7.0&bundleVer=1.5&bundleID=com.kidsfoodinc.school_lunch_maker&platform=32&v=2&top",
+      "url_scheme": " kfood-unicorn-puzzle-low-poly-girl-games-for-free",
+      "bundle_id": "com.kidsfoodinc.unicorn.puzzle.low.poly.girl.games.for.free",
+      "click_callback": "",
+      "id": 6464,
+      "icon_localpath": "MoreGames/icon3.jpg",
+      "icon": "https://services.beautygirlsinc.com/static/upload/icon_289.jpg"
+    }
+  ],
+  "secondary_btn_img": "https://services.beautygirlsinc.com/static/upload/Secondary_Button_2_7.png"
+}

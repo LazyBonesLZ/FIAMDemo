@@ -1,0 +1,90 @@
+import java.util.concurrent.CompletionException
+
+def getImplementionDependency(group, name) {
+    DependencySet dependencySet = configurations.api.dependencies
+    Dependency tmpDependency = null
+    dependencySet.each {
+        if (it.group == group && it.name == name) {
+            //        return  "$it.group:$it.name:$it.version"
+            println it
+            tmpDependency = it
+        }
+
+    }
+    return tmpDependency
+}
+
+def getFileCachedPath(String typeDir, Dependency dependcy) {
+    def homePath = ant.properties['user.home']
+    String finalPath = null
+    if (typeDir == 'Modules') {
+        String sdkPath = "$dependcy.group/$dependcy.name/$dependcy.version"
+        finalPath = homePath + "/.gradle/caches/modules-2/files-2.1/" + sdkPath
+    } else if (typeDir == 'Transforms') {
+        String sdkPath = "$dependcy.name-$dependcy.version" + ".aar"
+        finalPath = homePath + "/.gradle/caches/transforms-1/files-1.1/" + sdkPath
+    } else if (typeDir == 'libraries') {
+        String split = "_"
+        String sdkPath = "$dependcy.group$split$dependcy.name$split$dependcy.version"
+                .replace(".", split).replace("-", split)
+        String xmlPath = 'Gradle__' + sdkPath + ".xml"
+        finalPath = "../.idea/libraries/" + xmlPath
+//        finalPath = "./google-services.json"
+    }
+    //println "$typeDir,final path = " + finalPath
+
+    return finalPath
+}
+
+def deleteCacheFile(String typeDir, Dependency dependency) {
+    String cachedFilePath = getFileCachedPath(typeDir, dependency)
+    if (cachedFilePath == null) {
+        println "file does not exist!!! "
+        return
+    }
+
+    File cachedFile = file(cachedFilePath)
+    if (cachedFile.exists()) {
+        if (!cachedFile.isDirectory())
+            cachedFile.delete()
+        else
+            cachedFile.deleteDir()
+
+        println ">>> Deleted: $cachedFilePath "
+    } else {
+        println ">>> File does not exist!!! path: $cachedFilePath "
+    }
+}
+
+task cleanMkSDKCache {
+    doLast {
+        Dependency dependency = getImplementionDependency("com.ssc.libs", "sdk")
+        if (dependency != null) {
+            deleteCacheFile("libraries", dependency)
+            deleteCacheFile("Modules", dependency)
+            deleteCacheFile("Transforms", dependency)
+        } else {
+            println "can not find the sdk dependency info! "
+        }
+
+
+    }
+}
+
+task copyMoreGameJsonFile(type: Copy){
+    println 'copyMoreGameJsonFile'
+    File jsonFile =  project.file("moregames.json")
+    if (jsonFile.exists()){
+        from jsonFile.getAbsolutePath()
+        into 'src/main/assets'
+    }else {
+        println 'json file is NOT found'
+        throw new CompletionException("moregames.json is NOT found")
+
+    }
+
+}
+
+project.afterEvaluate {
+    preBuild.dependsOn(copyMoreGameJsonFile)
+}

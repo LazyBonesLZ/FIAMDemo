@@ -1,0 +1,24 @@
+{
+  "btn_img": "https://firebasestorage.googleapis.com/v0/b/myproject-2833c.appspot.com/o/icon_v1%2Fdefault_btn.png?alt=media&token=56dddd0c-0006-4f33-97dc-d9fdda8cb31a",
+  "apps": [
+    {
+      "store_id": "com.kidsfoodinc.unicorn.unicorn.slime.girl.games.for.free",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/myproject-2833c.appspot.com/o/icon_v1%2FFOOD0003G.jpg?alt=media&token=1c0db710-9508-492e-a5c3-e0a93a660b43"
+
+    },
+    {
+      "store_id": "mermaid.food.games",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/myproject-2833c.appspot.com/o/icon_v1%2FFOOD0002NG.jpg?alt=media&token=9e9b87af-6cf8-4e8a-85f8-5e8d81637162"
+    },
+
+    {
+      "store_id": "com.kidsfoodinc.unicorn.cooking.game",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/myproject-2833c.appspot.com/o/icon_v1%2Ficon-192_64.jpg?alt=media&token=ff6c3852-dab1-4c7c-9364-d037cafa0639"
+
+    },
+    {
+      "store_id": "com.kidsfoodinc.unicorn.puzzle.low.poly.girl.games.for.free",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/myproject-2833c.appspot.com/o/icon_v1%2Ficon_289.jpg?alt=media&token=fee0ca11-0c46-4177-ac52-28b54506b14d"
+    }
+  ]
+}

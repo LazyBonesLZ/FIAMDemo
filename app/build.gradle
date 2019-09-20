@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply from:'cleansdk.gradle'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    sourceSets.main {
+        java.srcDir "src/main/java"
+        res.srcDir "src/main/res"
+        jniLibs.srcDir "src/main/jniLibs"
+        manifest.srcFile "src/main/AndroidManifest.xml"
+        resources.srcDirs = ['src/info']
+        assets.srcDir "src/main/assets"
+    }
+
+    //==>Fix Bug: Invoke-customs are only supported starting with android 0 --min-api 26
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    //<==Bug end
+
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.ssc.internal.demo1"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 11
+        versionName "1.1"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+
+    }
+
+    flavorDimensions "market"
+    productFlavors {
+        googlePlay {
+            applicationId "com.ssc.internal.demo"
+            versionCode 10
+            versionName "1.0"
+        }
+
+    }
+    buildTypes {
+//        debug{
+//            debuggable true
+//        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            useProguard true
+//            multiDexKeepProguard file('multidex-config.pro')
+//            ndk {
+//                abiFilters "armeabi-v7a", "armeabi"
+//            }
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+    mavenCentral()
+}
+
+dependencies {
+    //for develop-－－－－－－－－－－－－－－－－－－－－－－－
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':sdk')
+    api('com.google.android.ads:mediation-test-suite:0.9.2', {
+        exclude group: 'javax.inject', module: 'javax.inject'
+    })
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+}
+apply plugin: 'com.google.gms.google-services'

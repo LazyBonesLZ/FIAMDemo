@@ -1,0 +1,73 @@
+<resources>
+
+    <string name="app_name">Component</string>
+    <string name="str_rate_content">If you enjoy using this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+    <string name="str_later">Later</string>
+    <string name="str_rate">Rate</string>
+    <string name="str_rate_title">Rate Me</string>
+    <string name="str_dialog_positve_btn">OK</string>
+    <string name="str_dialog_negative_btn">Cancel</string>
+
+    <!--<string name="str_rate_content">If you enjoy using this app,would you mind taking a moment to rate it?It won\'t take more than a minute. Thanks for your support!</string>-->
+    <!--<string name="str_later">Later</string>-->
+    <!--<string name="str_rate">Rate</string>-->
+    <!--<string name="str_rate_title">Rate Me</string>-->
+    <!--<string name="str_dialog_positve_btn">OK</string>-->
+    <!--<string name="str_dialog_negative_btn">Cancel</string>-->
+
+    <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_log_in_button">Log in with Facebook</string>
+    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log out</string>
+    <string name="com_facebook_loginview_cancel_action">Cancel</string>
+    <string name="com_facebook_logo_content_description">Facebook Logo</string>
+    <string name="com_facebook_usersettingsfragment_log_in_button">Log in&#8230;</string>
+    <string name="com_facebook_usersettingsfragment_logged_in">Logged in</string>
+    <string name="com_facebook_usersettingsfragment_not_logged_in">Not logged in</string>
+    <string name="com_facebook_placepicker_subtitle_format">%1$s • %2$,d were here</string>
+    <string name="com_facebook_placepicker_subtitle_catetory_only_format">%1$s</string>
+    <string name="com_facebook_placepicker_subtitle_were_here_only_format">%1$,d were here</string>
+    <string name="com_facebook_picker_done_button_text">Done</string>
+    <string name="com_facebook_choose_friends">Choose Friends</string>
+    <string name="com_facebook_nearby">Nearby</string>
+    <string name="com_facebook_loading">Loading...</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="com_facebook_requesterror_web_login">Your Facebook account is locked. Please log into www.facebook.com to continue.</string>
+    <string name="com_facebook_requesterror_relogin">Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_password_changed">Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_reconnect">Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_permissions">This app doesn’t have permission to do this. To change permissions, try logging into the app again.</string>
+    <string name="email_chooser">Choose a client</string>
+    <string name="more_game_progress_dialog_waiting">Please Wait...</string>
+    <string name="contact_subject">override me</string>
+    <string name="contact_msg">override me</string>
+    <string name="contact_address">override me</string>
+
+    <string name="network_dlg_title1">Need Internet to continue playing!</string>
+    <string name="network_dlg_msg1">You can turn on internet for this app in Settings.</string>
+    <string name="network_dlg_title2">No Internet Connection!</string>
+    <string name="network_dlg_title3">Network Connection Need</string>
+    <string name="network_dlg_msg3">Please make sure you can connect to the network.</string>
+
+    <string name="network_dlg_settings">Settings</string>
+    <string name="network_dlg_cancel">Cancel</string>
+    <string name="network_dlg_no_thanks">No, thanks</string>
+    <string name="network_dlg_try_again">Try Again</string>
+
+    <string name="permission_default_title">Access Required! </string>
+    <string name="permission_default_msg1">Please enable access to &#160;</string>
+    <string name="permission_default_msg2">&#160;to use this app! </string>
+    <string name="permission_default_msg3">&#160;to play this game! </string>
+    <string name="permission_custom_title">Restore Progress on other Devices? </string>
+    <string name="permission_custom_msg">Enable access to Contacts if you want to keep playing on other devices. If you press cancel you can continue playing.</string>
+
+    <string name="launch_setting_failed"> Failed to launch the setting app, Pls to launch it manually! </string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">fcm_channel_name</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="fcm_message">FCM Message</string>
+</resources>

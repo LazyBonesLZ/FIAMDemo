@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FIAM-Demo</string>
+    <string name="text">my problem was that i was using R.drawable.clickCamera, but clickCamera was actually an XML drawable (for a button with selectable states), not an actual image. that was silly.
+    my problem was that i was using R.drawable.clickCamera, but clickCamera was actually an XML drawable (for a button with selectable states), not an actual image. that was silly.
+    my problem was that i was using R.drawable.clickCamera, but clickCamera was actually an XML drawable (for a button with selectable states), not an actual image. that was silly.
+    my problem was that i was using R.drawable.clickCamera, but clickCamera was actually an XML drawable (for a button with selectable states), not an actual image. that was silly.</string>
+</resources>

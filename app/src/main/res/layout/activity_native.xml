@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ads_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="loading" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp">
+
+        <LinearLayout
+            android:id="@+id/ads_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/showCustomInappMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp"
+                android:onClick="onClickAdsBtn"
+                android:text="showCustomInappMsg"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/showCustomInappMsgModal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp"
+                android:onClick="onClickAdsBtn"
+                android:text="showCustomInappMsgModal"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/showCustomInappMsgImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp"
+                android:onClick="onClickAdsBtn"
+                android:text="showCustomInappMsgImage"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/showCustomInappMsgTopBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp"
+                android:onClick="onClickAdsBtn"
+                android:text="showCustomInappMsgTopBanner"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
